@@ -58,7 +58,3 @@ The pipeline translates raw events into actionable intelligence:
 This research is developed with the **Khalifa University Center for Autonomous Robotic Systems (KUCARS)** in mind, focusing on the next generation of neuromorphic rover perception.
 
 
-
-
-
-**Would you like me to help you write the "Methodology" section for your formal 4-page paper next?**
