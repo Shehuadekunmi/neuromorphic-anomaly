@@ -1,0 +1,86 @@
+
+*** arguments:
+auto_timestamp_resolution:	True
+avi_frame_rate:	30
+batch_size:	8
+crop:	None
+cs_lambda_pixels:	None
+cs_tau_p_ms:	None
+cutoff_hz:	300
+ddd_output:	False
+disable_slomo:	True
+dvs1024:	False
+dvs128:	False
+dvs240:	False
+dvs346:	True
+dvs640:	False
+dvs_aedat2:	None
+dvs_aedat4:	None
+dvs_emulator_seed:	0
+dvs_exposure:	['duration', '0.01']
+dvs_h5:	events.h5
+dvs_params:	clean
+dvs_text:	None
+dvs_vid:	dvs-video.avi
+dvs_vid_full_scale:	2
+hdr:	False
+input:	C:\Users\DELL 7480\OneDrive\Desktop\Neuromorphic_Project\UCSD_Anomaly_Dataset.v1p2\UCSDped1\Test\Test001\test001.mp4
+input_frame_rate:	None
+input_slowmotion_factor:	1.0
+label_signal_noise:	False
+leak_jitter_fraction:	0.1
+leak_rate_hz:	0.01
+neg_thres:	0.2
+no_preview:	False
+noise_rate_cov_decades:	0.1
+output_folder:	C:\Users\DELL 7480\OneDrive\Desktop\Neuromorphic_Project\events_ucsd_normal
+output_height:	None
+output_in_place:	False
+output_width:	None
+overwrite:	True
+photoreceptor_noise:	False
+pos_thres:	0.2
+record_single_pixel_states:	None
+refractory_period:	0.0005
+save_dvs_model_state:	False
+scidvs:	False
+shot_noise_rate_hz:	0.001
+show_dvs_model_state:	None
+sigma_thres:	0.03
+skip_video_output:	False
+slomo_model:	C:\Users\DELL 7480\OneDrive\Desktop\Neuromorphic_Project\v2e\input\SuperSloMo39.ckpt
+slomo_stats_plot:	False
+start_time:	None
+stop_time:	None
+synthetic_input:	None
+timestamp_resolution:	None
+unique_output_folder:	True
+vid_orig:	video_orig.avi
+vid_slomo:	video_slomo.avi
+
+*** command line:
+ C:\Users\DELL 7480\OneDrive\Desktop\Neuromorphic_Project\v2e\v2e.py --input C:\Users\DELL 7480\OneDrive\Desktop\Neuromorphic_Project\UCSD_Anomaly_Dataset.v1p2\UCSDped1\Test\Test001\test001.mp4 --output_folder C:\Users\DELL 7480\OneDrive\Desktop\Neuromorphic_Project\events_ucsd_normal --overwrite --dvs_h5 events.h5 --dvs_params clean --pos_thres 0.2 --neg_thres 0.2 --dvs346 --disable_slomo2026-02-27 18:13:13,487 - __main__ - [1;34mINFO[1;0m - opening video input file C:\Users\DELL 7480\OneDrive\Desktop\Neuromorphic_Project\UCSD_Anomaly_Dataset.v1p2\UCSDped1\Test\Test001\test001.mp4
+2026-02-27 18:13:13,505 - __main__ - [1;31mWARNING[1;0m - slomo interpolation disabled by command line option; output DVS timestamps will have source frame interval resolution
+2026-02-27 18:13:13,506 - __main__ - [1;34mINFO[1;0m - Source video C:\Users\DELL 7480\OneDrive\Desktop\Neuromorphic_Project\UCSD_Anomaly_Dataset.v1p2\UCSDped1\Test\Test001\test001.mp4 has total 200 frames with total duration 6.63s. 
+Source video is 30fps with slowmotion_factor 1 (frame interval 33.33ms),
+Will convert 200 frames 0 to 199
+(From 0.0s to 6.633333333333334s, duration 6.633333333333334s)
+2026-02-27 18:13:13,510 - __main__ - [1;34mINFO[1;0m - v2e DVS video will have constant-duration frames 
+at 100fps (accumulation time 10ms), 
+DVS video will have 663.0 frames with duration 6.63s and playback duration 22.10s
+
+2026-02-27 18:13:13,534 - __main__ - [1;31mWARNING[1;0m - --dvs_param=clean option overrides your selected options for threshold, threshold-mismatch, leak and shot noise rates
+2026-02-27 18:13:13,536 - __main__ - [1;34mINFO[1;0m - processing frames 0 to 199 from video input
+2026-02-27 18:13:13,538 - __main__ - [1;34mINFO[1;0m - Input video C:\Users\DELL 7480\OneDrive\Desktop\Neuromorphic_Project\UCSD_Anomaly_Dataset.v1p2\UCSDped1\Test\Test001\test001.mp4 has W=238 x H=158 frames each with 3 channels
+2026-02-27 18:13:13,538 - __main__ - [1;34mINFO[1;0m - *** Stage 1/3: Resizing 200 input frames to output size (with possible RGB to luma conversion)
+2026-02-27 18:13:13,545 - __main__ - [1;34mINFO[1;0m - 
+Converting input frames from RGB color to luma
+2026-02-27 18:13:13,911 - __main__ - [1;34mINFO[1;0m - *** Stage 2/3:turning npy frame files to png from C:\Users\DELL74~1\AppData\Local\Temp\tmph46yyvj3
+2026-02-27 18:13:16,998 - __main__ - [1;34mINFO[1;0m - *** Stage 3/3: emulating DVS events from 200 frames
+2026-02-27 18:14:10,813 - __main__ - [1;34mINFO[1;0m - generated total 2M events (990.80k on, 1.01M off)
+2026-02-27 18:14:10,814 - __main__ - [1;34mINFO[1;0m - Avg event rate for N=89960 px and total time =6.633 s
+	Total: 301.71kHz (149.37kHz on, 152.35kHz off)
+	Per pixel:  3.35Hz (1.66Hz on, 1.69Hz off)
+2026-02-27 18:14:10,816 - __main__ - [1;34mINFO[1;0m - showing C:\Users\DELL 7480\OneDrive\Desktop\Neuromorphic_Project\events_ucsd_normal in desktop
+2026-02-27 18:14:10,895 - __main__ - [1;34mINFO[1;0m - done processing 400 frames in 57.33s (6.98fr/s)
+ **************** see output folder C:\Users\DELL 7480\OneDrive\Desktop\Neuromorphic_Project\events_ucsd_normal

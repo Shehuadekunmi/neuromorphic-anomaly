@@ -1,0 +1,68 @@
+
+*** arguments:
+auto_timestamp_resolution:	True
+avi_frame_rate:	30
+batch_size:	8
+crop:	None
+cs_lambda_pixels:	None
+cs_tau_p_ms:	None
+cutoff_hz:	300
+ddd_output:	False
+disable_slomo:	False
+dvs1024:	False
+dvs128:	False
+dvs240:	False
+dvs346:	False
+dvs640:	False
+dvs_aedat2:	None
+dvs_aedat4:	None
+dvs_emulator_seed:	0
+dvs_exposure:	['duration', '0.01']
+dvs_h5:	None
+dvs_params:	None
+dvs_text:	None
+dvs_vid:	dvs-video.avi
+dvs_vid_full_scale:	2
+hdr:	False
+input:	None
+input_frame_rate:	None
+input_slowmotion_factor:	1.0
+label_signal_noise:	False
+leak_jitter_fraction:	0.1
+leak_rate_hz:	0.01
+neg_thres:	0.2
+no_preview:	False
+noise_rate_cov_decades:	0.1
+output_folder:	C:\Users\DELL 7480\OneDrive\Desktop\Neuromorphic_Project\v2e-output
+output_height:	None
+output_in_place:	False
+output_width:	None
+overwrite:	False
+photoreceptor_noise:	False
+pos_thres:	0.2
+record_single_pixel_states:	None
+refractory_period:	0.0005
+save_dvs_model_state:	False
+scidvs:	False
+shot_noise_rate_hz:	0.001
+show_dvs_model_state:	None
+sigma_thres:	0.03
+skip_video_output:	False
+slomo_model:	C:\Users\DELL 7480\OneDrive\Desktop\Neuromorphic_Project\v2e\input\SuperSloMo39.ckpt
+slomo_stats_plot:	False
+start_time:	None
+stop_time:	None
+synthetic_input:	None
+timestamp_resolution:	None
+unique_output_folder:	True
+vid_orig:	video_orig.avi
+vid_slomo:	video_slomo.avi
+
+**** extra other arguments (please check if you are misspelling intended arguments):
+\
+
+*** command line:
+ v2e\v2e.py \2026-02-27 17:50:41,891 - __main__ - [1;34mINFO[1;0m - opening video input file C:\Users\DELL 7480\OneDrive\Desktop\Neuromorphic_Project\v2e\v2e.py
+2026-02-27 17:50:42,434 - __main__ - [1;31mWARNING[1;0m - Could not read video frame size from video input and so could not automatically set DVS output size. 
+Check DVS camera sizes arguments.
+2026-02-27 17:50:42,435 - __main__ - [38;5;9mERROR[1;0m - source C:\Users\DELL 7480\OneDrive\Desktop\Neuromorphic_Project\v2e\v2e.py fps is 0; v2e needs to have a timescale for input video
